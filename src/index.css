@@ -164,7 +164,7 @@
   }
 
   .glass-panel {
-    @apply rounded-3xl border border-border/60 bg-elevated/90 shadow-soft-subtle backdrop-blur-xl;
+    @apply rounded-3xl border border-border/60 bg-elevated shadow-soft-subtle backdrop-blur-xl;
   }
 
   .hero-gradient-text {
