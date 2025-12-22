@@ -4,16 +4,16 @@ export const AboutSection = () => {
       <div className="section-shell grid gap-10 md:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] md:items-start">
         <div>
           <p className="section-kicker">About</p>
-          <h2 className="section-title">Engineering that balances craft and clarity.</h2>
+          <h2 className="section-title">Building my foundation as a modern full-stack developer.</h2>
           <p className="section-body">
-            I&apos;m a software engineer and full-stack web developer who cares deeply about building products that feel
-            thoughtful, stable, and fast. I gravitate toward problems where UX, performance, and maintainable
-            architecture intersect.
+            I&apos;m Bada Tunde Samson, a 200-level Software Engineering student actively developing skills in full-stack web
+            development. I focus on writing clean, understandable code while learning how real-world products are
+            designed, built, and shipped.
           </p>
           <p className="section-body mt-4">
-            My work spans modern frontends with React and TypeScript, reliable backends, and the glue in-between—APIs,
-            data modeling, and systems that scale without becoming fragile. I enjoy collaborating with designers, asking
-            sharp questions, and turning ideas into experiences that feel inevitable.
+            I have a strong foundation in HTML, CSS, JavaScript, React, PHP, and Git/GitHub, and I&apos;m committed to
+            problem-solving, continuous improvement, and becoming an industry-ready developer who can contribute to
+            reliable, scalable products.
           </p>
         </div>
 
