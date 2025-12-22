@@ -23,8 +23,8 @@ export const SiteHeader = () => {
     <header className="sticky top-0 z-40 nav-blur">
       <div className="section-shell flex items-center justify-between gap-4 py-4 sm:py-5">
         <a href="#top" className="flex items-center gap-2 group">
-          <div className="flex h-9 w-9 items-center justify-center rounded-2xl bg-gradient-primary text-primary-foreground shadow-glow group-hover:shadow-glow-strong transition-shadow">
-            <span className="font-display text-sm font-semibold">SE</span>
+          <div className="flex h-9 px-3 items-center justify-center rounded-xl bg-gradient-primary text-primary-foreground shadow-glow group-hover:shadow-glow-strong transition-shadow">
+            <span className="font-display text-sm font-semibold tracking-tight">SamTech</span>
           </div>
           <div className="flex flex-col leading-tight">
             <span className="font-display text-sm font-semibold tracking-tight">Software Engineer</span>

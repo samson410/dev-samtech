@@ -74,19 +74,19 @@ export const HeroSection = () => {
         <aside className="relative z-10 flex-1 max-w-md self-stretch lg:max-w-sm">
           <div className="glass-panel bg-elevated-soft/90 p-5 sm:p-6 lg:p-7 animate-enter">
             <div className="flex items-center gap-4">
-              <div className="relative h-24 w-24 overflow-hidden rounded-2xl bg-elevated-soft shadow-soft-subtle">
+              <div className="relative h-24 w-32 overflow-hidden rounded-2xl bg-elevated-soft shadow-soft-subtle">
                 <img
                   src={profileDemo}
-                  alt="Placeholder profile portrait for a software engineer"
+                  alt="Profile portrait of SamTech, full-stack web developer"
                   loading="lazy"
                   className="h-full w-full object-cover"
                 />
               </div>
               <div className="space-y-1">
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">Profile</p>
-                <p className="text-sm font-medium text-foreground">Demo developer image</p>
+                <p className="text-sm font-medium text-foreground">SamTech</p>
                 <p className="text-[11px] text-muted-foreground">
-                  This is a placeholder portrait that you can replace with your own professional photo.
+                  Full-Stack Web Developer &amp; Aspiring Software Engineer
                 </p>
               </div>
             </div>
