@@ -28,13 +28,7 @@ export const HeroSection = () => {
       <div className="pointer-events-none orb-light top-1/2 right-[-10%] opacity-20" aria-hidden="true" />
 
       <div className="section-shell flex flex-col gap-10 pt-16 pb-20 sm:pt-20 sm:pb-24 lg:flex-row lg:items-center lg:gap-16">
-        <div className="relative z-10 flex-1 space-y-7 animate-fade-in">
-          <p className="section-kicker flex items-center gap-2 text-[11px]">
-            <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-secondary text-[10px] text-secondary-foreground">
-              <Sparkle className="h-3 w-3" />
-            </span>
-            Building the future of web experiences with clarity and intent
-          </p>
+        <div className="relative z-10 flex-1 space-y-6 animate-fade-in">
 
           <h1 className="section-title font-display text-[2.6rem] leading-[1.05] sm:text-[3.1rem] lg:text-[3.4rem]">
             <span className="hero-gradient-text block">Bada Tunde Samson</span>
