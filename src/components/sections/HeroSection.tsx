@@ -32,17 +32,19 @@ export const HeroSection = () => {
             <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-secondary text-[10px] text-secondary-foreground">
               <Sparkle className="h-3 w-3" />
             </span>
-            Building the future, one precise commit at a time
+            Building the future of web experiences with clarity and intent
           </p>
 
           <h1 className="section-title font-display text-[2.6rem] leading-[1.05] sm:text-[3.1rem] lg:text-[3.4rem]">
-            <span className="hero-gradient-text block">Software engineer</span>
-            <span className="mt-1 block text-foreground">crafting cinematic web experiences.</span>
+            <span className="hero-gradient-text block">Bada Tunde Samson</span>
+            <span className="mt-1 block text-foreground">
+              Software Engineering Student &amp; Full-Stack Web Developer
+            </span>
           </h1>
 
           <p className="max-w-xl text-sm leading-relaxed text-muted-foreground sm:text-base">
-            I design and build full-stack web applications that feel effortless to use, yet powerful under the hood—clean
-            architecture, thoughtful UX, and production-grade execution from concept to launch.
+            Software Engineering student and full-stack web developer focused on building clean, scalable, and modern web
+            applications with thoughtful UX and reliable foundations.
           </p>
 
           <div className="flex flex-wrap items-center gap-3">
@@ -56,7 +58,7 @@ export const HeroSection = () => {
               <a href="#contact">Let&apos;s build something</a>
             </Button>
             <p className="w-full text-xs text-muted-foreground sm:w-auto">
-              Currently focused on React, TypeScript, and scalable backend architecture.
+              Currently studying Software Engineering and growing in full-stack web development.
             </p>
           </div>
 
