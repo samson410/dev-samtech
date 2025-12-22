@@ -27,8 +27,8 @@ export const HeroSection = () => {
       <div className="pointer-events-none orb-light -top-40 left-1/4" aria-hidden="true" />
       <div className="pointer-events-none orb-light top-1/2 right-[-10%] opacity-20" aria-hidden="true" />
 
-      <div className="section-shell flex flex-col gap-10 pt-16 pb-20 sm:pt-20 sm:pb-24 lg:flex-row lg:items-center lg:gap-16">
-        <div className="relative z-10 flex-1 space-y-7 animate-fade-in">
+      <div className="section-shell flex flex-col gap-12 pt-20 pb-24 sm:pt-24 sm:pb-28 lg:flex-row lg:items-center lg:gap-20">
+        <div className="relative z-10 flex-1 space-y-8 animate-fade-in">
           <p className="section-kicker flex items-center gap-2 text-[11px]">
             <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-secondary text-[10px] text-secondary-foreground">
               <Sparkle className="h-3 w-3" />
