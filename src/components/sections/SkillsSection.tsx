@@ -30,14 +30,17 @@ export const SkillsSection = () => {
             </div>
           </div>
 
-          <div className="grid gap-4 rounded-3xl bg-elevated/80 p-5 shadow-soft-subtle backdrop-blur-xl sm:grid-cols-3 sm:p-6">
+          <div className="grid gap-6 rounded-3xl bg-elevated/80 p-6 shadow-soft-subtle backdrop-blur-xl sm:grid-cols-3 sm:gap-8 sm:p-7 lg:p-8">
             {Object.entries(skillsByTier).map(([tier, items]) => (
-              <div key={tier} className="space-y-3">
-                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-muted-foreground">{tier}</p>
-                <ul className="space-y-1.5 text-xs text-muted-foreground">
+              <div
+                key={tier}
+                className="min-h-[150px] space-y-3 rounded-2xl bg-elevated-soft/60 px-4 py-5"
+              >
+                <p className="text-sm font-semibold uppercase tracking-[0.22em] text-muted-foreground">{tier}</p>
+                <ul className="space-y-2 text-sm text-muted-foreground">
                   {items.map((item) => (
-                    <li key={item} className="flex items-center gap-2">
-                      <span className="h-1 w-4 rounded-full bg-gradient-primary" />
+                    <li key={item} className="flex items-center gap-2.5">
+                      <span className="h-1.5 w-5 rounded-full bg-gradient-primary" />
                       <span>{item}</span>
                     </li>
                   ))}
