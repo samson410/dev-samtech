@@ -34,13 +34,13 @@ export const SiteHeader = () => {
 
         <nav className="hidden items-center gap-6 text-xs font-medium text-muted-foreground sm:flex">
           {navItems.map((item) => (
-            <NavLink
+            <a
               key={item.href}
-              to={item.href}
+              href={item.href}
               className="story-link hover:text-foreground transition-colors"
             >
               {item.label}
-            </NavLink>
+            </a>
           ))}
         </nav>
 
