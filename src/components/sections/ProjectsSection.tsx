@@ -7,18 +7,21 @@ const projects = [
     purpose: "Turn raw product metrics into decisions teams can actually act on.",
     tech: ["React", "TypeScript", "Recharts", "Node.js"],
     value: "Clean dashboards, segmentable metrics, and a UX that respects focus.",
+    href: "#",
   },
   {
     title: "Client project delivery portal",
     purpose: "Give clients a single, honest view of progress, scope, and next steps.",
     tech: ["React", "PHP", "REST APIs", "PostgreSQL"],
     value: "Reduced status meetings and made collaboration feel transparent.",
+    href: "#",
   },
   {
     title: "Design-aware marketing site engine",
     purpose: "Ship new marketing pages without rewriting the front-end each time.",
     tech: ["React", "TypeScript", "Headless CMS", "UI/UX"],
     value: "Fast iteration with performance budgets baked into the system.",
+    href: "#",
   },
 ];
 
@@ -49,34 +52,39 @@ export const ProjectsSection = () => {
 
         <div className="mt-10 grid gap-5 md:grid-cols-3">
           {projects.map((project) => (
-            <article
+            <a
               key={project.title}
-              className="group glass-panel flex flex-col justify-between bg-elevated-soft/90 p-5 hover-scale"
+              href={project.href}
+              className="group block"
+              target="_blank"
+              rel="noreferrer"
             >
-              <header>
-                <h3 className="font-display text-base font-semibold tracking-tight text-foreground">
-                  {project.title}
-                </h3>
-                <p className="mt-2 text-xs leading-relaxed text-muted-foreground">{project.purpose}</p>
-              </header>
+              <article className="glass-panel flex h-full flex-col justify-between bg-elevated-soft/90 p-5 hover-scale">
+                <header>
+                  <h3 className="font-display text-base font-semibold tracking-tight text-foreground">
+                    {project.title}
+                  </h3>
+                  <p className="mt-2 text-xs leading-relaxed text-muted-foreground">{project.purpose}</p>
+                </header>
 
-              <div className="mt-4 flex flex-wrap gap-1.5 text-[11px]">
-                {project.tech.map((tech) => (
-                  <Badge key={tech} variant="outline">
-                    {tech}
-                  </Badge>
-                ))}
-              </div>
+                <div className="mt-4 flex flex-wrap gap-1.5 text-[11px]">
+                  {project.tech.map((tech) => (
+                    <Badge key={tech} variant="outline">
+                      {tech}
+                    </Badge>
+                  ))}
+                </div>
 
-              <p className="mt-4 text-xs leading-relaxed text-muted-foreground">{project.value}</p>
+                <p className="mt-4 text-xs leading-relaxed text-muted-foreground">{project.value}</p>
 
-              <div className="mt-4 flex items-center justify-between text-[11px] text-muted-foreground">
-                <span className="inline-flex items-center gap-1">
-                  <Github className="h-3.5 w-3.5" />
-                  Code samples & breakdowns available.
-                </span>
-              </div>
-            </article>
+                <div className="mt-4 flex items-center justify-between text-[11px] text-muted-foreground">
+                  <span className="inline-flex items-center gap-1">
+                    <Github className="h-3.5 w-3.5" />
+                    Code samples & breakdowns available.
+                  </span>
+                </div>
+              </article>
+            </a>
           ))}
         </div>
       </div>
