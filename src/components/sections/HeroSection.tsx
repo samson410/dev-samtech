@@ -1,3 +1,4 @@
+import profileDemo from "@/assets/profile-demo.png";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkle } from "lucide-react";
 import { useEffect, useState } from "react";
@@ -74,7 +75,25 @@ export const HeroSection = () => {
 
         <aside className="relative z-10 flex-1 max-w-md self-stretch lg:max-w-sm">
           <div className="glass-panel bg-elevated-soft/90 p-5 sm:p-6 lg:p-7 animate-enter">
-            <p className="text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground">Signal snapshot</p>
+            <div className="flex items-center gap-4">
+              <div className="relative h-20 w-20 overflow-hidden rounded-2xl bg-elevated-soft shadow-soft-subtle">
+                <img
+                  src={profileDemo}
+                  alt="Placeholder profile portrait for a software engineer"
+                  loading="lazy"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <div className="space-y-1">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">Profile</p>
+                <p className="text-sm font-medium text-foreground">Demo developer image</p>
+                <p className="text-[11px] text-muted-foreground">
+                  This is a placeholder portrait that you can replace with your own professional photo.
+                </p>
+              </div>
+            </div>
+
+            <p className="mt-6 text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground">Signal snapshot</p>
             <p className="mt-3 text-sm font-medium text-muted-foreground">How I show up as an engineer</p>
 
             <ul className="mt-4 space-y-3 text-sm">
