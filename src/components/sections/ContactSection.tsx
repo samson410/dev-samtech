@@ -36,31 +36,55 @@ export const ContactSection = () => {
       setErrors((prev) => ({ ...prev, [field]: undefined }));
     };
 
-  const handleSubmit = (event: React.FormEvent) => {
-    event.preventDefault();
-    const parsed = contactSchema.safeParse(values);
+ const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+  event.preventDefault();
+  const parsed = contactSchema.safeParse(values);
 
-    if (!parsed.success) {
-      const fieldErrors: Partial<Record<keyof typeof values, string>> = {};
-      parsed.error.issues.forEach((issue) => {
-        const field = issue.path[0] as keyof typeof values;
-        fieldErrors[field] = issue.message;
-      });
-      setErrors(fieldErrors);
-      return;
-    }
+  if (!parsed.success) {
+    const fieldErrors: Partial<Record<keyof typeof values, string>> = {};
+    parsed.error.issues.forEach((issue) => {
+      const field = issue.path[0] as keyof typeof values;
+      fieldErrors[field] = issue.message;
+    });
+    setErrors(fieldErrors);
+    return;
+  }
 
-    setSubmitting(true);
+  setSubmitting(true);
 
-    setTimeout(() => {
-      setSubmitting(false);
+  try {
+    const res = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(values),
+    });
+
+    const result = await res.json();
+
+    if (res.ok) {
       toast({
-        title: "Message ready to send",
-        description: "This demo doesn&apos;t send emails yet, but your message passed all checks.",
+        title: "Message sent successfully!",
+        description: "Thank you for reaching out. I'll get back to you soon.",
       });
       setValues({ name: "", email: "", message: "" });
-    }, 600);
-  };
+    } else {
+      toast({
+        title: "Error sending message",
+        description: result.message || "Something went wrong. Try again later.",
+        variant: "destructive",
+      });
+    }
+  } catch (err) {
+    console.error(err);
+    toast({
+      title: "Error sending message",
+      description: "Something went wrong. Try again later.",
+      variant: "destructive",
+    });
+  } finally {
+    setSubmitting(false);
+  }
+};
 
   return (
     <section id="contact" className="bg-background/98">
