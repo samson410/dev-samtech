@@ -20,7 +20,7 @@ export const HeroSection = () => {
 
   return (
     <section
-      id="hero"
+      id="home"
       className="relative overflow-hidden border-b border-border/60 bg-gradient-to-b from-background/80 via-background/90 to-background/95"
     >
       <div className="pointer-events-none orb-light -top-40 left-1/4" aria-hidden="true" />
