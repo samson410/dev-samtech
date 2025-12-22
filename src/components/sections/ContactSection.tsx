@@ -99,7 +99,7 @@ export const ContactSection = () => {
 
           <div className="mt-6 flex flex-wrap items-center gap-3 text-xs text-muted-foreground">
             <a
-              href="https://github.com"
+              href="https://github.com/samson410"
               target="_blank"
               rel="noreferrer"
               className="story-link inline-flex items-center gap-2 hover:text-foreground"
@@ -108,7 +108,7 @@ export const ContactSection = () => {
               GitHub
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/samson-bada-65880a337"
               target="_blank"
               rel="noreferrer"
               className="story-link inline-flex items-center gap-2 hover:text-foreground"
@@ -117,7 +117,7 @@ export const ContactSection = () => {
               LinkedIn
             </a>
             <a
-              href="mailto:hello@example.com"
+              href="mailto:samsonbada0@gmail.com"
               className="story-link inline-flex items-center gap-2 hover:text-foreground"
             >
               <Mail className="h-4 w-4" />
