@@ -45,9 +45,13 @@ export const SiteHeader = () => {
         </nav>
 
         <div className="flex items-center gap-2 sm:gap-3">
+          <div className="order-1 sm:order-2">
+            <ThemeToggle />
+          </div>
+
           <button
             type="button"
-            className="inline-flex items-center justify-center rounded-2xl border border-border/60 bg-background/80 px-3 py-2 text-xs font-medium text-muted-foreground shadow-soft-subtle transition-colors hover:bg-background/95 sm:hidden"
+            className="order-2 inline-flex items-center justify-center rounded-2xl border border-border/60 bg-background/80 px-3 py-2 text-xs font-medium text-muted-foreground shadow-soft-subtle transition-colors hover:bg-background/95 sm:hidden sm:order-1"
             aria-label="Toggle navigation menu"
             aria-expanded={mobileOpen}
             onClick={() => setMobileOpen((open) => !open)}
@@ -62,7 +66,6 @@ export const SiteHeader = () => {
           >
             View work
           </a>
-          <ThemeToggle />
         </div>
       </div>
 
