@@ -5,7 +5,7 @@ export const SiteFooter = () => {
     <footer className="border-t border-border/60 bg-background/80">
       <div className="section-shell flex flex-col gap-4 py-8 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
         <p className="order-2 sm:order-1">
-          © {new Date().getFullYear()} Software Engineer & Full-Stack Web Developer. Crafted with intention.
+          © {new Date().getFullYear()} Designed and built by Tunde Samson Bada.
         </p>
         <div className="order-1 flex items-center gap-3 sm:order-2">
           <a

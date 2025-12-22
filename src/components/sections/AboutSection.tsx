@@ -4,9 +4,11 @@ export const AboutSection = () => {
       <div className="section-shell grid gap-10 md:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] md:items-start">
         <div>
           <p className="section-kicker">About</p>
-          <h2 className="section-title">Building my foundation as a modern full-stack developer.</h2>
+          <h2 className="section-title text-foreground">
+            Building my foundation as a modern full-stack developer.
+          </h2>
           <p className="section-body">
-            I&apos;m Bada Tunde Samson, a 200-level Software Engineering student actively developing skills in full-stack web
+            I&apos;m Bada Tunde Samson, a Software Engineering student actively developing skills in full-stack web
             development. I focus on writing clean, understandable code while learning how real-world products are
             designed, built, and shipped.
           </p>
