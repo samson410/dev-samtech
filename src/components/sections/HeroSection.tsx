@@ -38,12 +38,14 @@ export const HeroSection = () => {
 
           <h1 className="section-title font-display text-[2.6rem] leading-[1.05] sm:text-[3.1rem] lg:text-[3.4rem]">
             <span className="hero-gradient-text block">Bada Tunde Samson</span>
-            <span className="mt-1 block text-foreground">Full-Stack Web Developer</span>
+            <span className="mt-1 block text-foreground">
+              Software Engineering Student &amp; Full-Stack Web Developer
+            </span>
           </h1>
 
           <p className="max-w-xl text-sm leading-relaxed text-muted-foreground sm:text-base">
-            Full-stack web developer focused on building clean, scalable, and modern web applications with thoughtful UX
-            and reliable foundations.
+            A Full-stack web developer focused on building clean, scalable, and modern web applications with thoughtful
+            UX and reliable foundations.
           </p>
 
           <div className="flex flex-wrap items-center gap-3">
