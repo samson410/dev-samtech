@@ -56,8 +56,11 @@ export const ProjectsSection = () => {
               key={project.title}
               href={project.href}
               className="group block"
-              target="_blank"
-              rel="noreferrer"
+              onClick={(e) => {
+                if (!project.href || project.href === "#") {
+                  e.preventDefault();
+                }
+              }}
             >
               <article className="glass-panel flex h-full flex-col justify-between bg-elevated-soft/90 p-5 hover-scale">
                 <header>
