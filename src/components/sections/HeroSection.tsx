@@ -27,8 +27,8 @@ export const HeroSection = () => {
       <div className="pointer-events-none orb-light -top-40 left-1/4" aria-hidden="true" />
       <div className="pointer-events-none orb-light top-1/2 right-[-10%] opacity-20" aria-hidden="true" />
 
-      <div className="section-shell flex flex-col gap-12 pt-20 pb-24 sm:pt-24 sm:pb-28 lg:flex-row lg:items-center lg:gap-20">
-        <div className="relative z-10 flex-1 space-y-8 animate-fade-in">
+      <div className="section-shell flex flex-col gap-10 pt-16 pb-20 sm:pt-20 sm:pb-24 lg:flex-row lg:items-center lg:gap-16">
+        <div className="relative z-10 flex-1 space-y-7 animate-fade-in">
           <p className="section-kicker flex items-center gap-2 text-[11px]">
             <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-secondary text-[10px] text-secondary-foreground">
               <Sparkle className="h-3 w-3" />
@@ -38,14 +38,12 @@ export const HeroSection = () => {
 
           <h1 className="section-title font-display text-[2.6rem] leading-[1.05] sm:text-[3.1rem] lg:text-[3.4rem]">
             <span className="hero-gradient-text block">Bada Tunde Samson</span>
-            <span className="mt-1 block text-foreground">
-              Software Engineering Student &amp; Full-Stack Web Developer
-            </span>
+            <span className="mt-1 block text-foreground">Full-Stack Web Developer</span>
           </h1>
 
           <p className="max-w-xl text-sm leading-relaxed text-muted-foreground sm:text-base">
-            Software Engineering student and full-stack web developer focused on building clean, scalable, and modern web
-            applications with thoughtful UX and reliable foundations.
+            Software Engineering student and full-stack web developer focused on building clean, scalable, and modern
+            web applications with thoughtful UX and reliable foundations.
           </p>
 
           <div className="flex flex-wrap items-center gap-3">
@@ -122,9 +120,7 @@ export const HeroSection = () => {
               <p className="mt-1 text-muted-foreground">
                 Type-safe APIs, design systems, and how to make complex products feel simple.
               </p>
-              <p className="mt-2 text-[11px] font-medium text-primary">
-                {heroHighlights[activeHighlight]}
-              </p>
+              <p className="mt-2 text-[11px] font-medium text-primary">{heroHighlights[activeHighlight]}</p>
             </div>
           </div>
         </aside>
