@@ -10,10 +10,10 @@ export const SkillsSection = () => {
   return (
     <section id="skills" className="border-b border-border/60 bg-background/95">
       <div className="section-shell">
-        <p className="section-kicker">Skills &amp; tools</p>
+        <p className="section-kicker text-foreground/80">Skills &amp; tools</p>
         <div className="grid gap-10 md:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] md:items-start">
           <div>
-            <h2 className="section-title">A focused stack for building modern web products.</h2>
+            <h2 className="section-title text-foreground">A focused stack for building modern web products.</h2>
             <p className="section-body">
               My toolkit is intentionally opinionated: technologies that are battle-tested, maintainable, and proven in
               production. I value clarity over hype, automation over repetition, and design awareness at every layer.
