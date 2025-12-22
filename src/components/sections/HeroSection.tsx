@@ -74,7 +74,7 @@ export const HeroSection = () => {
         <aside className="relative z-10 flex-1 max-w-md self-stretch lg:max-w-sm">
           <div className="glass-panel bg-elevated-soft/90 p-5 sm:p-6 lg:p-7 animate-enter">
             <div className="flex items-center gap-4">
-              <div className="relative h-28 w-28 overflow-hidden rounded-2xl bg-elevated-soft shadow-soft-subtle sm:h-32 sm:w-32">
+              <div className="relative h-24 w-24 overflow-hidden rounded-2xl bg-elevated-soft shadow-soft-subtle">
                 <img
                   src={profileDemo}
                   alt="Placeholder profile portrait for a software engineer"
