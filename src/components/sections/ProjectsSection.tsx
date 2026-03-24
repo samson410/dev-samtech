@@ -10,18 +10,18 @@ const projects = [
     href: "https://daniel-banks.vercel.app/",
   },
   {
-    title: "Client project delivery portal",
-    purpose: "Give clients a single, honest view of progress, scope, and next steps.",
+    title: "Taskflow Website",
+    purpose: "Provides a structured way to manage daily activities, track progress, and maintain efficiency. ",
     tech: ["React", "PHP", "REST APIs", "PostgreSQL"],
-    value: "Reduced status meetings and made collaboration feel transparent.",
-    href: "#",
+    value: "focuses on simplicity, performance, and usability across different devices",
+    href: "https://student-task-mate.vercel.app/",
   },
   {
-    title: "Design-aware marketing site engine",
-    purpose: "Ship new marketing pages without rewriting the front-end each time.",
-    tech: ["React", "TypeScript", "Headless CMS", "UI/UX"],
-    value: "Fast iteration with performance budgets baked into the system.",
-    href: "#",
+    title: "Toras Couture Website",
+    purpose: "Showcase fashion collections, highlight the designer’s identity, and enable client inquiries.",
+    tech: ["React", "TypeScript", "Tailwind CSS", "UI/UX],
+    value: "Delivers a visually engaging, responsive experience that strengthens brand presence and drives client engagement.",
+    href: "https://tora-couture.vercel.app/",
   },
 ];
 
