@@ -19,7 +19,7 @@ const projects = [
   {
     title: "Toras Couture Website",
     purpose: "Showcase fashion collections, highlight the designer’s identity, and enable client inquiries.",
-    tech: ["React", "TypeScript", "Tailwind CSS", "UI/UX],
+    tech: ["React", "TypeScript", "Tailwind CSS", "UI/UX"],
     value: "Delivers a visually engaging, responsive experience that strengthens brand presence and drives client engagement.",
     href: "https://tora-couture.vercel.app/",
   },
