@@ -3,11 +3,11 @@ import { Github, Globe, Link2 } from "lucide-react";
 
 const projects = [
   {
-    title: "Product analytics dashboard",
-    purpose: "Turn raw product metrics into decisions teams can actually act on.",
-    tech: ["React", "TypeScript", "Recharts", "Node.js"],
-    value: "Clean dashboards, segmentable metrics, and a UX that respects focus.",
-    href: "#",
+    title: "Photography portfolio website",
+    purpose: "showcases your work, and helps attract clients by presenting your best images in a professional and accessible way",
+    tech: ["React", "TypeScript", "Node.js"],
+    value: "Build credibility, Showcase unique style, Attract client, Showcases professionalism",
+    href: "https://daniel-banks.vercel.app/",
   },
   {
     title: "Client project delivery portal",
