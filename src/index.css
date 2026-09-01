@@ -16,7 +16,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 10%;
 
-    --primary: 222 89% 56%; /* electric indigo */
+    --primary: 225 8% 56%; /* electric indigo */
     --primary-foreground: 210 40% 98%;
 
     --secondary: 220 18% 94%;
@@ -52,7 +52,7 @@
     --sidebar-ring: 222 89% 56%;
 
     /* Cinematic gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(222 89% 56%), hsl(265 84% 60%));
+    --gradient-primary: linear-gradient(135deg, hsl(222 89% 56%), hsl(222 89% 56%));
     --gradient-soft:
       radial-gradient(circle at top left, hsl(222 89% 56% / 0.14), transparent 55%),
       radial-gradient(circle at bottom right, hsl(265 84% 60% / 0.16), transparent 55%);
@@ -98,7 +98,7 @@
     --input: 220 24% 22%;
     --ring: 222 89% 62%;
 
-    --elevated: 222 46% 7.5%;
+    --elevated: 222 50% 1.0%;
     --elevated-soft: 222 46% 9%;
 
     --sidebar-background: 222 46% 6%;
@@ -174,7 +174,7 @@
   }
 
   .nav-blur {
-    @apply border-b border-border/60 bg-background/70 backdrop-blur-xl;
+    @apply border-b border-border/60 bg-black backdrop-blur-xl;
   }
 }
 

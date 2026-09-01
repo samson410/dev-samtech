@@ -22,26 +22,28 @@ export const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative overflow-hidden border-b border-border/60 bg-gradient-to-b from-background/80 via-background/90 to-background/95"
+      className="relative overflow-hidden  border-border/60 bg-black from-background/80 via-background/90 to-background/95"
     >
-      <div className="pointer-events-none orb-light -top-40 left-1/4" aria-hidden="true" />
+      <div className="pointer-events-none orb-light -top-40 left-1/4" aria-hidden="true" />     
       <div className="pointer-events-none orb-light top-1/2 right-[-10%] opacity-20" aria-hidden="true" />
+      <div className="pointer-events-none orb-light top-2/4  opacity-20 z-[1000]" aria-hidden="true" />
 
+{/* hero section     */}
       <div className="section-shell flex flex-col gap-10 pt-16 pb-20 sm:pt-20 sm:pb-24 lg:flex-row lg:items-center lg:gap-16">
         <div className="relative z-10 flex-1 space-y-6 animate-fade-in">
 
           <h1 className="section-title font-display text-[2.6rem] leading-[1.05] sm:text-[3.1rem] lg:text-[3.4rem]">
             <span className="hero-gradient-text block">Bada Tunde Samson</span>
-            <span className="mt-1 block text-foreground">Full-Stack Web Developer</span>
+            <span className="mt-1 block text-foreground">Full-Stack Developer</span>
           </h1>
 
           <p className="max-w-xl text-sm leading-relaxed text-muted-foreground sm:text-base">
-            Full-stack web developer focused on building clean, scalable, and modern web applications with thoughtful UX
+            Full-stack developer focused on building clean, scalable, and modern web & mobile applications with thoughtful UX
             and reliable foundations.
           </p>
 
           <div className="flex flex-wrap items-center gap-3">
-            <Button variant="hero" size="lg" className="hover-scale" asChild>
+            <Button size="lg" className="hover-scale" asChild>
               <a href="#projects" className="flex items-center gap-2">
                 View selected work
                 <ArrowRight className="h-4 w-4" />
@@ -50,25 +52,29 @@ export const HeroSection = () => {
             <Button variant="subtle" size="lg" className="hover-scale" asChild>
               <a href="#contact">Let&apos;s build something</a>
             </Button>
-            <p className="w-full text-xs text-muted-foreground sm:w-auto">
+            {/* <p className="w-full text-xs text-muted-foreground sm:w-auto">
               Currently studying Software Engineering and growing in full-stack web development.
-            </p>
+            </p> */}
           </div>
 
           <div className="mt-3 flex flex-wrap items-center gap-3 text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
             <span className="rounded-full bg-secondary/60 px-3 py-1 text-[10px] font-medium text-secondary-foreground">
-              Full-stack web development
+              web development
+            </span>
+            <span className="rounded-full bg-secondary/60 px-3 py-1 text-[10px] font-medium text-secondary-foreground">
+              Mobile App development
             </span>
             <span className="rounded-full bg-secondary/40 px-3 py-1 text-[10px] font-medium text-secondary-foreground">
               Product-minded engineering
             </span>
           </div>
         </div>
-
-        <aside className="relative z-10 flex-1 max-w-md self-stretch lg:max-w-sm">
-          <div className="glass-panel bg-elevated-soft/90 p-5 sm:p-6 lg:p-7 animate-enter">
-            <div className="flex items-center gap-4">
-              <div className="relative h-24 w-32 overflow-hidden rounded-2xl bg-elevated-soft shadow-soft-subtle">
+{/* [rprofile card] */}
+        <aside className="relative z-10 flex-1 max-w-md self-stretch lg:max-w-sm ">
+          <div className="glass-panel bg-elevated-soft/90 p-5 sm:p-6 lg:p-4 animate-enter shadow-blue-600 shadow-[0_0_30px_-16px_rgba(59,246,0.08)]">
+ {/* border-blue-600 */}
+            <div className="flex items-center gap-10 ">
+              <div className="relative w-60 overflow-hidden rounded-2xl bg-elevated-soft shadow-soft-subtle ">
                 <img
                   src={profileDemo}
                   alt="Profile portrait of SamTech, full-stack web developer"
@@ -77,16 +83,16 @@ export const HeroSection = () => {
                 />
               </div>
               <div className="space-y-1">
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">Profile</p>
-                <p className="text-sm font-medium text-foreground">SamTech</p>
-                <p className="text-[11px] text-muted-foreground">
-                  Full-Stack Web Developer &amp; Aspiring Software Engineer
+                <p className="text-[12px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">Profile</p>
+                <p className="text-[15px] font-medium text-foreground">Samson</p>
+                <p className="text-[13px] text-muted-foreground">
+                  Full-Stack Software Developer
                 </p>
               </div>
             </div>
 
-            <p className="mt-6 text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground">Signal snapshot</p>
-            <p className="mt-3 text-sm font-medium text-muted-foreground">How I show up as an engineer</p>
+            <p className="mt-6 text-center text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground">Signal snapshot</p>
+            <p className="mt-3 text-sm font-medium text-muted-foreground">How I show up as a developer</p>
 
             <ul className="mt-4 space-y-3 text-sm">
               <li className="flex items-start gap-2">
@@ -109,12 +115,12 @@ export const HeroSection = () => {
               </li>
             </ul>
 
-            <div className="mt-5 rounded-2xl border border-border/60 bg-background/60 px-4 py-3 text-xs text-muted-foreground">
-              <p className="font-medium text-foreground">Currently exploring</p>
+            <div className="mt-5 rounded-2xl border-none bg-elevated-soft/90 px-4 py-3 text-xs text-muted-foreground">
+              {/* <p className="font-medium text-foreground">Currently exploring</p>
               <p className="mt-1 text-muted-foreground">
                 Type-safe APIs, design systems, and how to make complex products feel simple.
-              </p>
-              <p className="mt-2 text-[11px] font-medium text-primary">{heroHighlights[activeHighlight]}</p>
+              </p> */}
+              <p className=" text-[11px] font-medium text-blue-600 text-center ">{heroHighlights[activeHighlight]}</p>
             </div>
           </div>
         </aside>

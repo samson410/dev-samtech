@@ -2,7 +2,7 @@ import { Github, Linkedin, Mail } from "lucide-react";
 
 export const SiteFooter = () => {
   return (
-    <footer className="border-t border-border/60 bg-background/80">
+    <footer className="relative overflow-hidden border-b border-border/60 bg-black from-background/80 via-background/90 to-background/95~">
       <div className="section-shell flex flex-col gap-4 py-8 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
         <p className="order-2 sm:order-1">
           © {new Date().getFullYear()} Designed and built by Tunde Samson Bada.

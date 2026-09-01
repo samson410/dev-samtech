@@ -1,6 +1,6 @@
 export const ApproachSection = () => {
   return (
-    <section id="approach" className="border-b border-border/60 bg-background/95">
+    <section id="approach" className="relative overflow-hidden border-b border-border/60 bg-black from-background/80 via-background/90 to-background/95">
       <div className="section-shell grid gap-10 lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] lg:items-start">
         <div>
           <p className="section-kicker">Why work with me</p>

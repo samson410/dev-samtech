@@ -1,6 +1,9 @@
+
 export const AboutSection = () => {
   return (
-    <section id="about" className="border-b border-border/60 bg-background/95">
+    <section id="about" className=" bg-black/95 border-collapse">
+  
+      
       <div className="section-shell grid gap-10 md:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] md:items-start">
         <div>
           <p className="section-kicker">About</p>
@@ -8,7 +11,7 @@ export const AboutSection = () => {
             Building my foundation as a modern full-stack developer.
           </h2>
           <p className="section-body">
-            I&apos;m Bada Tunde Samson, a Software Engineering student actively developing skills in full-stack web
+            I&apos;m Bada Tunde Samson, a Software Developer actively developing skills in full-stack
             development. I focus on writing clean, understandable code while learning how real-world products are
             designed, built, and shipped.
           </p>

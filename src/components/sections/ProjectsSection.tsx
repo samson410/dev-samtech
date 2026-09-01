@@ -27,7 +27,7 @@ const projects = [
 
 export const ProjectsSection = () => {
   return (
-    <section id="projects" className="border-b border-border/60 bg-background/95">
+    <section id="projects" className="relative overflow-hidden border-b border-border/60 bg-black from-background/80 via-background/90 to-background/95">
       <div className="section-shell">
         <p className="section-kicker">Selected work</p>
         <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">

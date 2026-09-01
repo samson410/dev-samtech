@@ -23,16 +23,16 @@ export const SiteHeader = () => {
     <header className="sticky top-0 z-40 nav-blur">
       <div className="section-shell flex items-center justify-between gap-4 py-4 sm:py-5">
         <a href="#top" className="flex items-center gap-2 group">
-          <div className="flex h-9 px-3 items-center justify-center rounded-xl bg-gradient-primary text-primary-foreground shadow-glow group-hover:shadow-glow-strong transition-shadow">
-            <span className="font-display text-sm font-semibold tracking-tight">SamTech</span>
+          <div className="flex h-12 px-3 items-center justify-center rounded-md text-white border border-transparent transition-colors duration-300 hover:border-blue-600 ">
+            <span className="font-display text-2xl font-semibold tracking-tight">SamTech</span>
           </div>
           <div className="flex flex-col leading-tight">
-            <span className="font-display text-sm font-semibold tracking-tight">Software Engineer</span>
-            <span className="text-[11px] uppercase tracking-[0.22em] text-muted-foreground">Full-Stack Web</span>
+            {/* <span className="font-display text-sm font-semibold tracking-tight">Software Engineer</span>
+            <span className="text-[11px] uppercase tracking-[0.22em] text-muted-foreground">Full-Stack Web</span> */}
           </div>
         </a>
 
-        <nav className="hidden items-center gap-6 text-xs font-medium text-muted-foreground sm:flex">
+        <nav className="hidden items-center gap-6 text-[14px] font-medium text-muted-foreground sm:flex">
           {navItems.map((item) => (
             <a
               key={item.href}
@@ -46,7 +46,7 @@ export const SiteHeader = () => {
 
         <div className="flex items-center gap-2 sm:gap-3">
           <div className="order-1 sm:order-2">
-            <ThemeToggle />
+            {/* <ThemeToggle /> */}
           </div>
 
           <button
@@ -62,7 +62,7 @@ export const SiteHeader = () => {
 
           <a
             href="#projects"
-            className="hidden text-xs font-medium text-muted-foreground hover:text-foreground sm:inline-flex story-link"
+            className="hidden text-[15px] font-medium text-muted-foreground hover:text-foreground sm:inline-flex story-link"
           >
             View work
           </a>

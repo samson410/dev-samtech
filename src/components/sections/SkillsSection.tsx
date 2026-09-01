@@ -8,7 +8,7 @@ const skillsByTier = {
 
 export const SkillsSection = () => {
   return (
-    <section id="skills" className="border-b border-border/60 bg-background/95">
+    <section id="skills" className="relative overflow-hidden border-b border-border/60 bg-black from-background/80 via-background/90 to-background/95">
       <div className="section-shell">
         <p className="section-kicker text-foreground/80">Skills &amp; tools</p>
         <div className="grid gap-10 md:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] md:items-start">
